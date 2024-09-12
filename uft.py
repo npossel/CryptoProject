@@ -36,7 +36,6 @@ def client(port):
     while totalsent < finallen:
         sent = clientsock.send(finalmsg[totalsent:])
         totalsent = totalsent + sent
-        print(totalsent)
 
     clientsock.close()
 
